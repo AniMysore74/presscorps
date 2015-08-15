@@ -1,0 +1,312 @@
+
+/* =============================================================
+GOOGLE FONT
+============================================================ */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+/* =============================================================
+BASE STYLES
+============================================================ */
+body {
+	background-color: #efefef;
+	overflow-x: hidden;
+	> .container-fluid {
+		padding: 50px 0 0 0;
+	}
+	> .container-fluid.home {
+		padding: 0;
+	}
+}
+
+/* =============================================================
+Yamm: Bootsrap Hack for Using Grids and other features inside Navigation Menu dropdowns
+============================================================ */
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ * 
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 40%;
+  right: 0;
+}
+/* =============================================================
+CUSTOM BUTTON STYLES
+============================================================ */
+
+.btn-custom {
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	margin: 25px 5px 5px 0px;
+	margin: 5px;
+}
+
+.btn-custom-one {
+	background-color: transparent;
+	color: #fff;
+	border: 2px solid rgb(40, 141, 203);
+}
+
+.btn-custom-one:hover {
+	background-color: rgb(40, 141, 203);
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-custom-two {
+	color: #fff;
+	background-color: rgba(15, 95, 173, 1);
+	border: 2px solid rgb(40, 141, 203);
+}
+
+.btn-custom-two:hover {
+	border: 2px solid rgb(40, 141, 203);
+	text-decoration: none;
+	color: rgba(15, 95, 173, 1);
+	background-color: transparent;
+}
+
+/* =============================================================
+MENU SECTION STYLES
+============================================================ */
+.navbar {
+	font-family: 'Ubuntu',sans-serif;
+	margin: 0;
+}
+.navbar-inverse {
+background-color: rgba(15, 95, 173, 1);
+border-color: transparent;
+}
+
+
+.navbar-brand .logo{
+	width: 30px;
+	height: 30px;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, .navbar li > ul a {
+background-color: transparent;
+border-bottom: 1px solid white;
+}
+.navbar-inverse .navbar-nav > li > a {
+		font-size: 15px;
+		font-weight: 800;
+		letter-spacing: 2px;
+		color: #FFF;
+}
+@media all and (min-width:992px) {
+	.navbar-inverse .navbar-nav > li > a {
+		padding: 15px 20px;
+	}
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
+color: #fff;
+font-weight: 900;
+font-family: 'Oswald', sans-serif;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+background-color: rgb(40, 141, 203);
+}
+.navbar-inverse .navbar-toggle {
+border-color: rgb(40, 141, 203);
+}
+.navbar li a:focus {
+	background-color: inherit;
+}
+.navbar .nav-thumb {
+	max-height: 96px;
+}
+.navbar li.dropdown ul.dropdown-menu {
+	background-color: rgba(15, 95, 173, 1);
+	li > a, li > div > a {
+		border: none;
+		color: #fff;
+	}
+	li > a:hover, li div > a:hover {
+		background-color: rgb(12, 71, 129) !important;
+		z-index: 999;
+	}
+}	
+@media all and (min-width:768ppx) {
+	
+}
+/* =============================================================
+	LANDER (on front page)
+============================================================ */
+section.lander {;
+	width: 100%;
+	background: fixed center no-repeat;
+	overflow: none;
+	text-align: center;
+	color: #fff;
+	font-family: 'Raleway',sans-serif;
+	position: relative;
+	>div.container-fluid {
+		padding-top: 50px;
+		height: 100vh;
+		background-color: rgba(1,1,1,0.7);
+		.vertical-align {
+			padding: 5% 0;
+		}
+	}
+	h1 {
+		font-size: 36px;
+		font-weight: normal;
+	}
+	img {
+		top: 50%;
+		bottom: 50%;
+		max-height: 16em;
+	}
+	div.down {
+		width: 100%;
+		position: absolute;
+		bottom: 10px;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	
+}
+
+/* =============================================================
+	WRAP (On committees + delegate-life pages)
+============================================================ */
+.wrap {
+	width: 100%;
+	background: fixed center no-repeat cover;
+	overflow: hidden;
+	> div {
+		padding: 1em;
+	}
+	.logo,.committee {
+		max-height: 20rem;
+	}
+	@media all and (max-width:768px)
+	{
+		.committee{
+			max-height: auto;
+			width: 100%;
+		}
+	}
+	h1 {
+		text-align: center;
+		font-size: 4em;
+		line-height: 30rem;
+		font-family: 'Ubuntu';
+		color: #fff;
+	}
+}
+/* =============================================================
+	BLOG
+============================================================ */	
+.content-area {
+	padding: 2em;
+	article {
+		margin: 0;
+	}
+	header {
+		margin: auto 0;
+	}
+	nav {
+		margin: 25px 0 0;
+		display: block;
+	}
+	.comments-area{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.page-content{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.site-main{
+		padding: 0;
+	}
+}
+@media all and (max-width:768px)
+{
+	.content-area {
+		padding: 0;
+		article {
+			margin: 1em 0;
+		}
+	}
+}
+/* =============================================================
+	SIDEBAR
+============================================================ */	
+.feed {
+	padding: 0;
+}
+#sidebar {
+	///////////////////////////////
+	//   RESETTING THEME STYLES  //
+	//  Target by ID to cascade  //
+	//  over media queries used  //
+	//  by the theme stylesheet  //
+	///////////////////////////////
+	float: none;
+	margin: 0;
+	position: inherit;
+	max-width: auto;
+	width: auto;
+	background-color: #fff;
+	
+}
+.sidebar {
+	padding-top: 2.5em;
+}
+/* =============================================================
+	FOOTER
+============================================================ */	
+
+.page-footer {
+	background-color: #fff; 
+	border: 1px solid rgba(51, 51, 51, 0.1); 
+	margin: 40px 0 0;
+	border-bottom: 1px solid #eee;
+	.site-info a {
+		//color: #fff;
+
+	}
+	.site-info {
+		//color: #d0d0d0;
+		font-family: 'Ubuntu',sans-serif;
+		text-align: center;
+	}
+}
+@media all and (max-width:768px){
+	.page-footer{
+		margin: 0;
+	}
+}
